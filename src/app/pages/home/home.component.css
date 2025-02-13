@@ -1,0 +1,18 @@
+.home-wrapper {
+    display: flex;
+    height: 100vh; /* Ocupar toda la pantalla */
+}
+
+app-sidemenu {
+    width: 250px; /* Ancho fijo del menú */
+    background-color: #f4f4f4; /* Opcional: color de fondo */
+    height: 100%;
+}
+
+.home-notes-wrapper {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}

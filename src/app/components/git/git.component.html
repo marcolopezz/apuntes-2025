@@ -1,0 +1,11 @@
+<div class="git-wrapper">
+    <h3>Apuntes git</h3>
+
+    <ul>
+        <li *ngFor="let item of gitHubCommands; track item; let  i = index" class="list-element">
+            <p class="title-description">{{item}}: </p>
+            <p> {{arrDescript[i]}}</p>
+        </li>
+    </ul>
+
+</div>

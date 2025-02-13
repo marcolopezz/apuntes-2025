@@ -1,0 +1,40 @@
+<div class="js-wrapper">
+    <h3 class="js-title">Apuntes JavaScript</h3>
+
+    <div class="section-wrapper">
+        <h4 class="section-title">Declaración de variables</h4>
+        <ul>
+            <li class="item-list" *ngFor="let item of javaScriptNotes.variableDeclaration">
+                <p>{{item.name}}: </p> <p>{{item.description}}</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section-wrapper">
+        <h4 class="section-title">Tipos de datos</h4>
+        <ul>
+            <li class="item-list" *ngFor="let item of javaScriptNotes.dataType">
+                <p>{{item.name}}: </p> <p>{{item.description}}</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section-wrapper">
+        <h4 class="section-title">Operadores</h4>
+        <ul>
+            <li class="item-list" *ngFor="let item of javaScriptNotes.operators">
+                <p>{{item.name}}: </p> <p>{{item.description}}</p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section-wrapper">
+        <h4 class="section-title">Bucles y condicionales</h4>
+        <ul>
+            <li class="item-list" *ngFor="let item of javaScriptNotes.sentences">
+                <p>{{item.name}}: </p> <p>{{item.description}}</p>
+            </li>
+        </ul>
+    </div>
+
+</div>

@@ -1,0 +1,29 @@
+<div class="component-container">
+    <h2>Comandos Básicos</h2>
+    <ul>
+        <li *ngFor="let item of terminalNotes.basics">
+            <strong>{{ item.title }}:</strong> {{ item.description }}
+        </li>
+    </ul>
+
+    <h2>Comandos de Git</h2>
+    <ul>
+        <li *ngFor="let item of terminalNotes.gitComands">
+            <strong>{{ item.title }}:</strong> {{ item.description }}
+        </li>
+    </ul>
+
+    <h2>Comandos de Angular</h2>
+    <ul>
+        <li *ngFor="let item of terminalNotes.angularComands">
+            <strong>{{ item.title }}:</strong> {{ item.description }}
+        </li>
+    </ul>
+
+    <h2>Comandos de Node.js</h2>
+    <ul>
+        <li *ngFor="let item of terminalNotes.nodeComands">
+            <strong>{{ item.title }}:</strong> {{ item.description }}
+        </li>
+    </ul>
+</div>

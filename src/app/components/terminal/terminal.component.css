@@ -1,0 +1,121 @@
+/* Estilo Global */
+body {
+    background: #0a0a0a; /* Fondo negro puro */
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.component-container {
+    background: rgba(255, 255, 255, 0.05); /* Efecto vidrio */
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 12px;
+    width: 600px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 80px;
+}
+
+.component-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.08);
+}
+
+/* Títulos */
+h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3); /* Subrayado */
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+/* Lista de elementos */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+/* Estilos de cada ítem */
+li {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Efecto hover en los elementos */
+li:hover {
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Texto en negrita (títulos de comandos) */
+strong {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* Descripción */
+li span {
+    font-size: 16px;
+    color: #b0b0b0; /* Gris claro */
+}
+
+/* Animación de entrada */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+li {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* Pequeña animación de brillo en títulos */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+    100% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    }
+}
+
+h2:hover {
+    animation: glow 1.5s infinite alternate;
+}
+.git-component-container{
+    margin-top: 3040px;
+}
