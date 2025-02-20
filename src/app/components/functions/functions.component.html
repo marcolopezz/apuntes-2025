@@ -1,0 +1,98 @@
+<h1>Apuntes de funciones</h1>
+
+<h3>¿Qué son las funciones?</h3>
+
+<p>
+    Las funciones son un método para encapsular un fragmento de código
+</p>
+
+<h3>Tipos de funcinoes</h3>
+
+<ul>
+    <li>
+        <h6>Según la sincronía:</h6>
+        <p>Síncronas o asíncronas</p>
+        <ol>
+            <li>
+                <code>
+                    {{
+                      "
+                      `function asyncFunction async() {
+                       setTimeOut(console.log('esto es una funcion asíncrona'),1000)
+      
+                    }
+                      "
+                    }}
+                      
+                  
+              </code>
+            </li>
+            <li>
+                <code>
+                    {{
+                      "function syncFunction() {
+                      console.log('esto es un funcion síncrona')
+                    }
+                      "
+                    }}
+                      
+                  
+              </code>
+            </li>
+        </ol>
+    </li>
+    <li>
+        <h6>Según como estén escritas:</h6>
+        <p>Normales o tipo flecha</p>
+        <ol>
+            <li>
+                <code>
+                    {{
+                       " const arrowFunction = () => {
+                        console.log('funcion tipo flecha')
+                        }"
+                    }}
+                  
+               
+               </code>
+            </li>
+            <li>
+                <code>
+                    {{                    
+                        "function commonFunction () {
+                           console.log('function común')
+                        }"
+                    }}
+               </code>
+            </li>
+        </ol>
+
+    </li>
+
+    <p>
+        Muy importante: las funciones tienen que ser invocadas para que se ejecuten.
+    </p>
+</ul>
+
+
+<h3>Código encapsulado</h3>
+
+<p>El código que sucede dentro de una función no tiene comunicación con el exterior,
+    por lo tanto los datos que queramos utilizar fuera de una función se incluiran en el return,
+    y los que queramos que utilice la función habrá que introducírselos a través de argumentos,
+    Ejemplo:
+    <code>
+        {{                    
+            "function functionSuma (argumento1, argumento2) {
+               const suma = argumento2 + argumento2;
+               return suma;
+            }"
+        }}
+   </code>
+    <code>
+    {{                    
+        "functionSuma(5,7);"
+    }}
+</code>
+
+</p>

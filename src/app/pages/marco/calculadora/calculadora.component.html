@@ -1,0 +1,25 @@
+<div>
+    <h1>Calculadora</h1>
+
+    <div>
+        <input type="number" [(ngModel)]="num1">
+        <input type="number" [(ngModel)]="num2">
+        <button (click)="calculadora(num1,num2,'suma')">+</button>
+        <button (click)="calculadora(num1,num2,'resta')">-</button>
+        <button (click)="calculadora(num1,num2,'mult')">*</button>
+        <button (click)="calculadora(num1,num2,'div')">/</button>
+    </div>
+    <div>
+        <p>Result= {{ result }}</p>
+    </div>
+</div>
+
+<div>
+    <h4>Tarea</h4>
+    <p>Exlicar ngModel y como se importa para utilizarlo</p>
+    <p>Explicar donde, cuando (evento click) y cuantas veces se llama a la funcion calculadora </p>
+    <p>Explicar que tipo de datos maneja nuestra calculadora</p>
+    <p>Explicar la linea del return en la funcion calculadora</p>
+    <p>Explicar el if y los else if de la funcion calculadora</p>
+    <p>Contestar a la pregunta: ¿devuelve algo nuestra función?</p>
+</div>
