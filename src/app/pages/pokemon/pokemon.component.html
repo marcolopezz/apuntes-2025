@@ -1,0 +1,38 @@
+
+
+
+<div>
+    <h1>Página Pokemon</h1>
+    <main>
+        <div>
+            <h5>Buscar pokemon</h5>
+            <div>
+                <p>Buscar un pokemon por ID</p>
+                <input placeholder="inserte el id del pokemon" type="number" [(ngModel)]="pokemonID">
+                <button (click)="getPokemonWithFetch(pokemonID)">Buscar pokemon</button>
+            </div>
+            <div>
+                <p>Buscar un pokemon por nombre</p>
+                <input placeholder="inserte el nombre del pokemon" type="text" [(ngModel)]="pokemonName">
+                <button (click)="getPokemonWithFetch(pokemonName)">Buscar pokemon</button>
+            </div>
+        </div>
+
+        <div *ngIf="mostrarPokemon"> 
+            <h5>El pokemon es: {{pokemonName}}</h5>
+            <img [src]="pokemonImage" alt="Imagen pokemon">
+            <img [src]="pokemonImage2" alt="Imagen pokemon">
+
+            <div>
+                <div>
+                    <p><strong>Descripción del pokemon:</strong><br></p>
+                    <p>{{pokemonDescription}}</p>
+                </div>
+                <div>
+                    <p><strong>Tipo de pokemon:</strong><br></p>
+                    <p>{{pokemonType}}</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
