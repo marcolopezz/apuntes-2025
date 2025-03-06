@@ -17,12 +17,16 @@ export class CalculadoraComponent {
     if(!(number1&&number2)) return;
     if (operation === 'suma') {
       this.result = number1 + number2;
+      return console.log("se ha hecho una suma")
     } else if (operation === 'resta') {
       this.result = number1 - number2;
+      return console.log("se ha hecho una resta")
     } else if (operation === 'mult') {
       this.result = number1 * number2;
+      return console.log("se ha hecho una multiplicacion")
     } else if (operation === 'div') {
       this.result = number1 / number2;
+      return console.log("se ha hecho una division")
     }
   }
 }
