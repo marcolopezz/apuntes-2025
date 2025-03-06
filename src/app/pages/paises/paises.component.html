@@ -1,0 +1,14 @@
+<div>
+    <div>
+        <h1>Paises page</h1>
+    </div>
+    <div>
+        <div>
+            <h3>Buscar un país</h3>
+            <input [(ngModel)]="paisBuscar" type="text" placeholder="Introduzca un pain">
+        </div>
+        <div>
+            <button (click)="getPaisesWithFetch(paisBuscar)">Buscar pais</button>
+        </div>
+    </div>
+</div>
