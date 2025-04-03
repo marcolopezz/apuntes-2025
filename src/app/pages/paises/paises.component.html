@@ -2,13 +2,28 @@
     <div>
         <h1>Paises page</h1>
     </div>
-    <div>
-        <div>
-            <h3>Buscar un país</h3>
-            <input [(ngModel)]="paisBuscar" type="text" placeholder="Introduzca un pain">
+    <div class="paises-buscador-container">
+        <div class="buscador-container">
+            <div>
+                <h3>Buscar un país</h3>
+                <input [(ngModel)]="paisBuscar" type="text" placeholder="Introduzca un país">
+            </div>
+            <div>
+                <button (click)="getPaisesWithFetch(paisBuscar)">Buscar pais</button>
+            </div>
         </div>
-        <div>
-            <button (click)="getPaisesWithFetch(paisBuscar)">Buscar pais</button>
+
+        <div *ngIf="paisRecibido&&!error" class="pais-container">
+            <!-- Información del país -->
+            <div>
+                <h2>Pais: {{paisRecibido.name.common}}</h2>
+                <h3>Capital: {{paisRecibido.capital[0]}}</h3>
+                <h3>Continente: {{continente}}</h3>
+                <img [src]="paisRecibido.flags.png" alt="bandera">
+            </div>
         </div>
+<div *ngIf="!paisRecibido&&error">
+    <p>pais no encontrado</p>
+</div>
     </div>
 </div>
